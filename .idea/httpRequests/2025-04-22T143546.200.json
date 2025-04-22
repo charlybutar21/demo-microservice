@@ -1,0 +1,10 @@
+{
+  "name": "John Doe",
+  "email": "WdMjK@example.com",
+  "mobileNumber": "081318728891",
+  "accountDto": {
+    "accountNumber": 1527839420,
+    "accountType": "Savings",
+    "branchAddress": "123 Main Street, New York"
+  }
+}
