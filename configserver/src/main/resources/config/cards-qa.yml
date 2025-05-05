@@ -1,8 +1,3 @@
-spring:
-  config:
-    activate:
-      on-profile: "qa"
-
 build:
   version: "2.0"
 
@@ -12,4 +7,4 @@ cards:
     name: "Niko - QA Lead"
     email: "niko@gmail.com"
   onCallSupport:
-    - (+62) 812-1872-8891
+    - (+62) 812-1872-8881

@@ -1,13 +1,8 @@
-spring:
-  config:
-    activate:
-      on-profile: "prod"
-
 build:
   version: "1.0"
 
-cards:
-  message: "Welcome to EazyBank cards related prod APIs "
+accounts:
+  message: "Welcome to EazyBank accounts related prod APIs "
   contactDetails:
     name: "Eben Ezer - Product Owner"
     email: "ebenezer@gmail.com"
