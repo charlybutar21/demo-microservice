@@ -1,6 +1,0 @@
-{
-  "apiPath": "uri=/api/accounts/081318728890",
-  "errorCode": "NOT_FOUND",
-  "errorMessage": "Customer not found with the given input data mobileNumber : '081318728890'",
-  "errorTime": "2025-04-22T07:35:38.482091493"
-}

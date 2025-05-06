@@ -1,0 +1,10 @@
+build:
+  version: "2.0"
+
+accounts:
+  message: "Welcome to EazyBank accounts related QA APIs "
+  contactDetails:
+    name: "Niko - QA Lead"
+    email: "niko@gmail.com"
+  onCallSupport:
+    - (+62) 812-1872-8891
