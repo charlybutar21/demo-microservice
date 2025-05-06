@@ -1,11 +1,11 @@
 build:
   version: "3.0"
 
-accounts:
-  message: "Welcome to EazyBank accounts related local APIs "
+cards:
+  message: "Welcome to EazyBank cards related local APIs "
   contactDetails:
     name: "Charly Micolas - Developer"
     email: "charly@gmail.com"
   onCallSupport:
-    - (+62) 812-1872-8890
+    - (+62) 812-1872-8880
 

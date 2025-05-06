@@ -1,3 +1,340 @@
+GET http://localhost:8090/api/loans/contact-info
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-05-06T105617.200.json
+
+###
+
+GET http://localhost:8090/api/loans/java-version
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-05-06T105614.200.json
+
+###
+
+DELETE http://localhost:8090/api/loans/081318728890
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-05-06T105612.200.json
+
+###
+
+PUT http://localhost:8090/api/loans
+Content-Type: application/json
+Content-Length: 190
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "mobileNumber": "081318728890",
+    "loanNumber": "100733768695",
+    "loanType": "Vehicle Loan",
+    "totalLoan": 1000000,
+    "amountPaid": 100000,
+    "outstandingAmount": 900000
+
+}
+
+<> 2025-05-06T105609.200.json
+
+###
+
+GET http://localhost:8090/api/loans/081318728890
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-05-06T105603.200.json
+
+###
+
+POST http://localhost:8090/api/loans?mobileNumber=081318728890
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-05-06T105600.201.json
+
+###
+
+GET http://localhost:9000/api/cards/contact-info
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-05-06T105538.200.json
+
+###
+
+GET http://localhost:9000/api/cards/build-info
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-05-06T105535.200.json
+
+###
+
+GET http://localhost:9000/api/cards/java-version
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-05-06T105533.200.json
+
+###
+
+DELETE http://localhost:9000/api/cards/081318728890
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-05-06T105531.200.json
+
+###
+
+PUT http://localhost:9000/api/cards
+Content-Type: application/json
+Content-Length: 183
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "mobileNumber": "081318728890",
+    "cardNumber": "100678514375",
+    "cardType": "Credit Card",
+    "totalLimit": 100000,
+    "amountUsed": 1000,
+    "availableAmount": 90000
+}
+
+<> 2025-05-06T105528.200.json
+
+###
+
+GET http://localhost:9000/api/cards/081318728890
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-05-06T105521.200.json
+
+###
+
+PUT http://localhost:9000/api/cards
+Content-Type: application/json
+Content-Length: 183
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "mobileNumber": "081318728890",
+    "cardNumber": "100193901821",
+    "cardType": "Credit Card",
+    "totalLimit": 100000,
+    "amountUsed": 1000,
+    "availableAmount": 90000
+}
+
+<> 2025-05-06T105519.404.json
+
+###
+
+GET http://localhost:9000/api/cards/081318728890
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-05-06T105516.200.json
+
+###
+
+POST http://localhost:9000/api/cards?mobileNumber=081318728890
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-05-06T105513.201.json
+
+###
+
+GET http://localhost:8080/api/accounts/contact-info
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-05-06T105340.200.json
+
+###
+
+GET http://localhost:8080/api/accounts/java-version
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-05-06T105337.200.json
+
+###
+
+GET http://localhost:8080/api/accounts/build-info
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-05-06T105333.200.json
+
+###
+
+DELETE http://localhost:8080/api/accounts/081318728890
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-05-06T105330.200.json
+
+###
+
+PUT http://localhost:8080/api/accounts
+Content-Type: application/json
+Content-Length: 225
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "John Doe",
+  "email": "WdMjK@example.com",
+  "mobileNumber": "081318728890",
+  "accountDto": {
+    "accountNumber": "1451446802",
+    "accountType": "SAVINGS",
+    "branchAddress": "124 Main St, City Ville"
+  }
+}
+
+<> 2025-05-06T105325.200.json
+
+###
+
+GET http://localhost:8080/api/accounts/081318728891
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-05-06T105320.200.json
+
+###
+
+PUT http://localhost:8080/api/accounts
+Content-Type: application/json
+Content-Length: 225
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "John Doe",
+  "email": "WdMjK@example.com",
+  "mobileNumber": "081318728890",
+  "accountDto": {
+    "accountNumber": "1362351475",
+    "accountType": "SAVINGS",
+    "branchAddress": "124 Main St, City Ville"
+  }
+}
+
+<> 2025-05-06T105317.404.json
+
+###
+
+GET http://localhost:8080/api/accounts/081318728891
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-05-06T105312.200.json
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+Content-Length: 90
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "John Doe",
+  "email": "WdMjK@example.com",
+  "mobileNumber": "081318728891"
+}
+
+<> 2025-05-06T105307.201.json
+
+###
+
+GET http://localhost:8080/api/accounts/contact-info
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2025-04-29T162319.200.json
+
+###
+
+GET http://localhost:8080/api/accounts/build-info
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2025-04-29T162230.200.json
+
+###
+
+GET http://localhost:8080/api/accounts/contact-info
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2025-04-29T162153.200.json
+
+###
+
 GET http://localhost:9000/api/cards/contact-info
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
 Accept-Encoding: br, deflate, gzip, x-gzip
@@ -232,272 +569,6 @@ Accept: */*
 content-length: 0
 
 <> 2025-04-26T142455.200.json
-
-###
-
-GET http://localhost:8080/api/accounts/build-info
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2025-04-26T142435.200.json
-
-###
-
-GET http://localhost:8080/api/accounts/build-info
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2025-04-26T142409.200.json
-
-###
-
-GET http://localhost:8080/api/build-info
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2025-04-26T142335.404.json
-
-###
-
-GET http://localhost:8080/api//build-info
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2025-04-26T142331.404.json
-
-###
-
-GET http://localhost:8080/api/accounts/081318728891
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2025-04-26T142130.200.json
-
-###
-
-POST http://localhost:8080/api/accounts
-Content-Type: application/json
-Content-Length: 90
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "John Doe",
-  "email": "WdMjK@example.com",
-  "mobileNumber": "081318728891"
-}
-
-<> 2025-04-26T142126.201.json
-
-###
-
-GET http://localhost:9000/api/cards/081318728890
-Content-Type: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2025-04-22T143603.200.json
-
-###
-
-POST http://localhost:9000/api/cards?mobileNumber=081318728890
-Content-Type: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2025-04-22T143601.201.json
-
-###
-
-GET http://localhost:8090/api/loans/081318728890
-Content-Type: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2025-04-22T143554.200.json
-
-###
-
-POST http://localhost:8090/api/loans?mobileNumber=081318728890
-Content-Type: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2025-04-22T143552.201.json
-
-###
-
-GET http://localhost:8080/api/accounts/081318728891
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2025-04-22T143546.200.json
-
-###
-
-GET http://localhost:8080/api/accounts/081318728890
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2025-04-22T143538.404.json
-
-###
-
-POST http://localhost:8080/api/accounts
-Content-Type: application/json
-Content-Length: 90
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "John Doe",
-  "email": "WdMjK@example.com",
-  "mobileNumber": "081318728891"
-}
-
-<> 2025-04-22T143535.201.json
-
-###
-
-GET http://localhost:9000/api/cards/081318728890
-Content-Type: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2025-04-22T135421.200.json
-
-###
-
-POST http://localhost:9000/api/cards?mobileNumber=081318728890
-Content-Type: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2025-04-22T135418.201.json
-
-###
-
-GET http://localhost:8090/api/loans/081318728890
-Content-Type: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2025-04-21T171343.200.json
-
-###
-
-POST http://localhost:8090/api/loans?mobileNumber=081318728890
-Content-Type: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2025-04-21T171340.201.json
-
-###
-
-GET http://localhost:8080/api/accounts/081318728890
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2025-04-21T142409.200.json
-
-###
-
-GET http://localhost:8080/api/accounts/081318728891
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2025-04-21T142403.200.json
-
-###
-
-GET http://localhost:8081/api/accounts/081318728890
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2025-04-21T142355.404.json
-
-###
-
-POST http://localhost:8080/api/accounts
-Content-Type: application/json
-Content-Length: 90
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "John Doe",
-  "email": "WdMjK@example.com",
-  "mobileNumber": "081318728891"
-}
-
-<> 2025-04-21T142337.201.json
-
-###
-
-GET http://localhost:8080/api/accounts/081318728890
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2025-04-21T141818.200.json
-
-###
-
-POST http://localhost:8080/api/accounts
-Content-Type: application/json
-Content-Length: 90
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "John Doe",
-  "email": "WdMjK@example.com",
-  "mobileNumber": "081318728890"
-}
-
-<> 2025-04-21T141813.201.json
 
 ###
 

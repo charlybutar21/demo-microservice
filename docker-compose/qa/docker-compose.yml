@@ -39,8 +39,8 @@ services:
     ports:
       - "8080:8080"
     depends_on:
-      - configserver:
-          condition: service_healthy
+      configserver:
+        condition: service_healthy
     environment:
       SPRING_APPLICATION_NAME: "accounts"
     extends:
@@ -53,8 +53,8 @@ services:
     ports:
       - "8090:8090"
     depends_on:
-      - configserver:
-          condition: service_healthy
+      configserver:
+        condition: service_healthy
     environment:
       SPRING_APPLICATION_NAME: "loans"
     extends:
@@ -67,8 +67,8 @@ services:
     ports:
       - "9000:9000"
     depends_on:
-      - configserver:
-          condition: service_healthy
+      configserver:
+        condition: service_healthy
     environment:
       SPRING_APPLICATION_NAME: "cards"
     extends:

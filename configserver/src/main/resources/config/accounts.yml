@@ -1,27 +1,3 @@
-server:
-  port: 8080
-spring:
-  datasource:
-    url: jdbc:h2:mem:accounts_db
-    username: sa
-    password:
-    driver-class-name: org.h2.Driver
-  h2:
-    console:
-      enabled: true
-  jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-  config:
-    import:
-      - "application_qa.yml"
-      - "application_prod.yml"
-  profiles:
-    active:
-      - "prod"
-
 build:
   version: "3.0"
 
