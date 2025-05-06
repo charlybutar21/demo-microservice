@@ -1,0 +1,11 @@
+build:
+  version: "3.0"
+
+loans:
+  message: "Welcome to EazyBank loans related local APIs "
+  contactDetails:
+    name: "Charly Micolas - Developer"
+    email: "charly@gmail.com"
+  onCallSupport:
+    - (+62) 812-1872-8870
+
