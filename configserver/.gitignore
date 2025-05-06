@@ -33,3 +33,23 @@ build/
 .vscode/
 *~
 
+# Ignore Maven build directories
+.mvn/
+
+# Ignore Maven wrapper files
+mvnw
+mvnw.cmd
+
+# Ignore IntelliJ IDEA directories and files
+.idea/
+
+# Ignore Eclipse directories and files
+.classpath
+.project
+.settings/
+
+# Ignore Spring Boot application properties
+application.properties
+
+# Ignore temporary files with a tilde (~) at the end
+*~
