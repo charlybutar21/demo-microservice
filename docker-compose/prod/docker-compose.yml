@@ -30,7 +30,7 @@ services:
       service: microservice-db-config
 
   configserver:
-    image: "charlymicolas21/configserver:s7"
+    image: "charlymicolas21/configserver:s8"
     container_name: configserver-ms
     ports:
       - "8071:8071"
@@ -44,8 +44,28 @@ services:
       file: common-config.yml
       service: microservice-base-config
 
+  eurekaserver:
+    image: "charlymicolas21/eurekaserver:s8"
+    container_name: eurekaserver-ms
+    ports:
+      - "8070:8070"
+    depends_on:
+      configserver:
+        condition: service_healthy
+    healthcheck:
+      test: "curl --fail --silent localhost:8070/actuator/health/readiness | grep UP || exit 1"
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    extends:
+      file: common-config.yml
+      service: microservice-configserver-config
+    environment:
+      SPRING_APPLICATION_NAME: "eurekaserver"
+
   accounts:
-    image: "charlymicolas21/accounts:s7"
+    image: "charlymicolas21/accounts:s8"
     container_name: accounts-ms
     ports:
       - "8080:8080"
@@ -53,6 +73,8 @@ services:
       accountsdb:
         condition: service_healthy
       configserver:
+        condition: service_healthy
+      eurekaserver:
         condition: service_healthy
     environment:
       SPRING_APPLICATION_NAME: "accounts"
@@ -62,7 +84,7 @@ services:
       service: microservice-configserver-config
 
   loans:
-    image: "charlymicolas21/loans:s7"
+    image: "charlymicolas21/loans:s8"
     container_name: loans-ms
     ports:
       - "8090:8090"
@@ -70,6 +92,27 @@ services:
       loansdb:
         condition: service_healthy
       configserver:
+        condition: service_healthy
+      eurekaserver:
+        condition: service_healthy
+    environment:
+      SPRING_APPLICATION_NAME: "loans"
+      SPRING_DATASOURCE_URL: "jdbc:mysql://loansdb:3306/loans_db"
+    extends:
+      file: common-config.yml
+      service: microservice-configserver-config
+
+  loans2:
+    image: "charlymicolas21/loans:s8"
+    container_name: loans-ms2
+    ports:
+      - "8091:8090"
+    depends_on:
+      loansdb:
+        condition: service_healthy
+      configserver:
+        condition: service_healthy
+      eurekaserver:
         condition: service_healthy
     environment:
       SPRING_APPLICATION_NAME: "loans"
@@ -79,7 +122,7 @@ services:
       service: microservice-configserver-config
 
   cards:
-    image: "charlymicolas21/cards:s7"
+    image: "charlymicolas21/cards:s8"
     container_name: cards-ms
     ports:
       - "9000:9000"
@@ -87,6 +130,8 @@ services:
       cardsdb:
         condition: service_healthy
       configserver:
+        condition: service_healthy
+      eurekaserver:
         condition: service_healthy
     environment:
       SPRING_APPLICATION_NAME: "cards"

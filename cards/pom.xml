@@ -79,6 +79,10 @@
             <artifactId>mysql-connector-j</artifactId>
             <scope>runtime</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
@@ -126,7 +130,7 @@
                 <version>3.4.5</version>
                 <configuration>
                     <to>
-                        <image>charlymicolas21/${project.artifactId}:s7</image>
+                        <image>charlymicolas21/${project.artifactId}:s8</image>
                     </to>
                 </configuration>
             </plugin>
