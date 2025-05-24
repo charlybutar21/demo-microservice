@@ -8,8 +8,8 @@ import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 @Data
-@Schema(name = "Customers", description = "Schema to hold Customer and Account information")
-public class CustomerDto {
+@Schema(name = "customerDetails", description = "Schema to hold Customer, Account, Cards and Loans information")
+public class CustomerDetailDto {
 
     @Schema(description = "Name of the customer", example = "Eazy Bytes")
     @NotEmpty(message = "Name can not be a null or empty")
@@ -22,9 +22,15 @@ public class CustomerDto {
     private String email;
 
     @Schema(description = "Mobile Number of the customer", example = "9345432123")
-    @Pattern(regexp = "(^$|[0-9]{10,13})", message = "Mobile number must be 10 to 13 digits")
+    @Pattern(regexp = "(^$|[0-9]{10})", message = "Mobile number must be 10 digits")
     private String mobileNumber;
 
     @Schema(description = "Account details of the Customer")
     private AccountDto accountDto;
+
+    @Schema(description = "Loans details of the Customer")
+    private LoanDto loanDto;
+
+    @Schema(description = "Cards details of the Customer")
+    private CardDto cardDto;
 }

@@ -1,7 +1,7 @@
 package com.charly.accounts.controller;
 
 import com.charly.accounts.constant.AccountConstant;
-import com.charly.accounts.dto.AccountsContactInfoDto;
+import com.charly.accounts.dto.AccountContactInfoDto;
 import com.charly.accounts.dto.CustomerDto;
 import com.charly.accounts.dto.ErrorResponseDto;
 import com.charly.accounts.dto.ResponseDto;
@@ -37,12 +37,11 @@ public class AccountController {
     @Value("${build.version}")
     private String buildVersion;
 
-
     @Autowired
     private Environment environment;
 
     @Autowired
-    private AccountsContactInfoDto accountsContactInfoDto;
+    private AccountContactInfoDto accountContactInfoDto;
 
     public AccountController(AccountService accountService) {
         this.accountService = accountService;
@@ -113,8 +112,8 @@ public class AccountController {
     @Operation(summary = "Get Contact Info", description = "Contact Info details that can be reached out in case of any issues")
     @ApiResponses({@ApiResponse(responseCode = "200", description = "HTTP Status OK"), @ApiResponse(responseCode = "500", description = "HTTP Status Internal Server Error", content = @Content(schema = @Schema(implementation = ErrorResponseDto.class)))})
     @GetMapping("/contact-info")
-    public ResponseEntity<AccountsContactInfoDto> getContactInfo() {
-        return ResponseEntity.status(HttpStatus.OK).body(accountsContactInfoDto);
+    public ResponseEntity<AccountContactInfoDto> getContactInfo() {
+        return ResponseEntity.status(HttpStatus.OK).body(accountContactInfoDto);
     }
 
 }

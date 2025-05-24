@@ -1,1 +1,1 @@
-{"image":"charlymicolas21/configserver:s7","imageId":"sha256:d4a4379818fcf30059758d0f06cdcd2d5dd0abb92c21f4354bbc61de58fef216","imageDigest":"sha256:257fdc02cfc4b34cc2d20907c5bf7eacfe38ffcf6b5f56d4360f4af0a9afd11f","tags":["s7"],"imagePushed":false}
+{"image":"charlymicolas21/configserver:s8","imageId":"sha256:d4a4379818fcf30059758d0f06cdcd2d5dd0abb92c21f4354bbc61de58fef216","imageDigest":"sha256:257fdc02cfc4b34cc2d20907c5bf7eacfe38ffcf6b5f56d4360f4af0a9afd11f","tags":["s8"],"imagePushed":false}
